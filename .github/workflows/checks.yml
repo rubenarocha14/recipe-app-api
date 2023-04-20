@@ -22,4 +22,4 @@ jobs:
         run: docker-compose run --rm app sh -c "python manage.py test"
     # Runs our lint testing (formatting, syntx etc)
       - name: Lint
-        run: docker-compose run --rm app sh -c "flaked"
+        run: docker-compose run --rm app sh -c "flake8"
